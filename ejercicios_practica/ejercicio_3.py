@@ -34,4 +34,12 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Graficar tangente hiperbolica', fontsize= 14)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, c='m', marker= '.', label= 'y = tan(x)')
+    ax.legend()
+    ax.grid()
+    plt.show() 
     print("terminamos")

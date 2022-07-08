@@ -34,5 +34,13 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Graficar y en funcion de x', fontsize= 14)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y, c= 'c', marker= 'o', label= 'y = x**2')
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor('white')
+    plt.show()
     print("terminamos")
